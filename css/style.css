@@ -147,18 +147,27 @@ body {
 }
 
 /* About Section */
-.about {
-  padding: 10rem 7% 1.4rem;
+.about,
+.menu,
+.products,
+.contact {
+  padding: 8rem 7% 1.4rem;
 }
 
-.about h2 {
+.about h2,
+.menu h2,
+.products h2,
+.contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
 
-.about h2 span {
-  color: #206117;
+.about h2 span,
+.menu h2 span,
+.products h2 span,
+.contact h2 span {
+  color: var(--primary);
 }
 
 .about .row {
@@ -171,11 +180,27 @@ body {
 
 .about .row .about-img img {
   width: 100%;
+  -webkit-mask-image: url("../img/menu/splash.svg");
+  -webkit-mask-size: 50%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 }
 
 .about .row .content {
   flex: 1 1 35rem;
   padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
 }
 
 /* Media Queris */
@@ -225,6 +250,28 @@ body {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
   }
 }
 
