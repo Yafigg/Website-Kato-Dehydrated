@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -21,22 +22,46 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Navbar Start -->
+    <!-- Navbar start -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">Kato<span>Food</span>.</a>
+      <a href="#" class="navbar-logo">Kato<span>Foods</span>.</a>
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
-        <a href="#about">About Us</a>
+        <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
-        <a href="#contact">Contact</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
       </div>
 
-      <div class="navbar-ekstra">
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+
+      <!-- Shopping Cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/about-img.png" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">Rp. 500.000,00</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <!-- Shopping Cart end -->
     </nav>
-    <!-- Navbar End -->
+    <!-- Navbar end -->
 
     <!-- Hero Section start-->
     <section class="hero" id="home">
@@ -53,32 +78,75 @@
 
     <!-- Hero Section end -->
 
-    <!-- Abaout Section Start-->
-    <section id="about" class="about">
-      <h2><span>About</span> Us</h2>
+    <!-- About Section start -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> Kami</h2>
 
-      <div class="row">
-        <div class="about-img">
-          <img
-            src="img/about-img.png"
-            alt="About Us" />
-        </div>
-        <div class="content">
-          <h3>Kenapa Memilih Kami ?</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-            quo. Consequuntur voluptas excepturi maxime temporibus?
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-            cupiditate, beatae nesciunt reprehenderit quod perferendis magni
-            unde quaerat rem commodi?
-          </p>
-        </div>
+    <div class="row">
+      <div class="about-img">
+        <img src="img/about-img.png" alt="Tentang Kami">
       </div>
-    </section>
+      <div class="content">
+        <h3>Kenapa Memilih Kami?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus voluptatum dolor. Et, voluptatum
+          accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic deserunt iure amet facilis eos a quo cum
+          voluptates molestias nihil.</p>
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+   <!-- Contact Section start -->
+  <section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident.
+    </p>
 
-    <!-- Abaout Section Start-->
+    <div class="row">
+      <iframe
+        src="https://maps.google.com/maps?q=Jl.+Gajayana+No.8&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="Nama">
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="No. HP">
+        </div>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+
+    </div>
+  </section>
+  <!-- Contact Section end -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="">Throne</a>. | &copy; 2023.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
 
     <!-- Feather Icons -->
     <script>
