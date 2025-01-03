@@ -265,9 +265,7 @@ body {
 }
 
 .about .row .about-img img {
-  width: 50em;
-  margin-left: 20px;
-  margin-top: -190px;
+  width: 100%;
 }
 
 .about .row .content {
@@ -381,6 +379,18 @@ footer .credit a {
   font-weight: 700;
 }
 
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
@@ -427,54 +437,6 @@ footer .credit a {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
-  }
-
-  .navbar .search-form {
-    width: 90%;
-    right: 2rem;
-  }
-
-  .about .row {
-    flex-wrap: wrap;
-  }
-
-  .about .row .about-img img {
-    height: 24rem;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .about .row .content {
-    padding: 0;
-  }
-
-  .about .row .content h3 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-
-  .about .row .content p {
-    font-size: 1.6rem;
-  }
-
-  .menu p {
-    font-size: 1.2rem;
-  }
-
-  .contact .row {
-    flex-wrap: wrap;
-  }
-
-  .contact .row .map {
-    height: 30rem;
-  }
-
-  .contact .row form {
-    padding-top: 0;
-  }
-
-  .modal-content {
-    flex-wrap: wrap;
   }
 }
 
