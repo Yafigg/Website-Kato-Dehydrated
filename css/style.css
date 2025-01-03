@@ -265,15 +265,16 @@ body {
 }
 
 .about .row .about-img img {
-  width: 50em;
+  width: 65em;
   margin-left: 20px;
-  margin-top: -190px;
+  margin-top: -250px;
 }
 
 .about .row .content {
   flex: 1 1 35rem;
-  padding: 0 1rem;
-  margin-right: 30px;
+  padding: 1 1rem;
+  margin-right: 100px;
+  margin-top: 100px;
 }
 
 .about .row .content h3 {
